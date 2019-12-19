@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="our.css" rel="stylesheet">
+	<meta charset= "utf-8">
+	<meta name= "keywords" content= "Twist, Women, Technology, Aviaiton, Engineering, Science">
+	<meta name= "description" content= "Twist website">
+	<meta name= "author" content= "Eric Webb, Shea Clark, Wesley Elliott, Jon Martin, Alex Windhorst">
+	<meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+</head>
+<div class = "navbar">
+<div class = "dropdown">
+  <p>Speakers</p>
+  <div class="dropdown_content">
+    <a href="dashboard/add-speaker/add-speaker">Add Speaker</a>
+    <a href="dashboard/edit-speaker/edit-speaker">Edit Speaker</a>
+  </div>
+</div>
+<div class = "dropdown">
+  <p>Schedule</p>
+  <div class="dropdown_content">
+    <a href="dashboard/add-schedule/add-schedule">Add Schedule</a>
+    <a href="dashboard/edit-schedule/edit-schedule">Edit Schedule</a>
+  </div>
+</div>
+<div class = "dropdown">
+  <p>Rooms</p>
+  <div class="dropdown_content">
+    <a href="dashboard/add-room/add-room">Add Room</a>
+    <a href="dashboard/edit-room/edit-room">Edit Room</a>
+  </div>
+</div>
+<div class = "dropdown">
+  <p>Attendees</p>
+  <div class="dropdown_content">
+    <a href="dashboard/add-attendee/add-attendee">Add Attendee</a>
+    <a href="dashboard/edit-attendee/edit-attendee">Edit Attendee</a>
+  </div>
+</div>
+</div>
+<div id = "schedule"></div>
+<input type="button" value = "Add Session" onclick = "window.location.href = '/dashboard/create-session'">

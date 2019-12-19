@@ -1,0 +1,163 @@
+doctype html
+head
+  link(href='stylesheets/our.css' rel='stylesheet')
+  meta(charset='utf-8')
+  meta(name='keywords' content='Twist, Women, Technology, Aviaiton, Engineering, Science')
+  meta(name='description' content='Twist registration')
+  meta(name='author' content='Eric Webb, Shea Clark, Wesley Elliot, Jon Martin, Alex Cosco')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+body
+  #blueMax
+    h2 Registration
+    #regForm
+      .form_container
+        form(name='register' method='post' action='')
+          p
+            br
+            label(for='fName') First Name:
+            input#fName(type='text' name='firstName' placeholder='First Name' required='')
+          p
+            label(for='lName') Last Name:
+            input#lName(type='text' name='lastName' placeholder='Last Name' required='')
+          p
+            label(for='email') Email:
+            input#email(type='email' name='email' placeholder='example@domain.com' required='')
+          p
+            label(for='address') Address:
+            input#address(type='text' name='address' placeholder='Address' required='')
+          p
+            label(for='city') City:
+            input#city(type='text' name='city' placeholder='City' required='')
+          p
+            label(for='state') State:
+            select(name='state')
+              option(value='AL') Alabama
+              option(value='AK') Alaska
+              option(value='AZ') Arizona
+              option(value='AR') Arkansas
+              option(value='CA') California
+              option(value='CO') Colorado
+              option(value='CT') Connecticut
+              option(value='DE') Delaware
+              option(value='DC') District Of Columbia
+              option(value='FL') Florida
+              option(value='GA') Georgia
+              option(value='HI') Hawaii
+              option(value='ID') Idaho
+              option(value='IL') Illinois
+              option(value='IN') Indiana
+              option(value='IA') Iowa
+              option(value='KS') Kansas
+              option(value='KY') Kentucky
+              option(value='LA') Louisiana
+              option(value='ME') Maine
+              option(value='MD') Maryland
+              option(value='MA') Massachusetts
+              option(value='MI') Michigan
+              option(value='MN') Minnesota
+              option(value='MS') Mississippi
+              option(value='MO') Missouri
+              option(value='MT') Montana
+              option(value='NE') Nebraska
+              option(value='NV') Nevada
+              option(value='NH') New Hampshire
+              option(value='NJ') New Jersey
+              option(value='NM') New Mexico
+              option(value='NY') New York
+              option(value='NC') North Carolina
+              option(value='ND') North Dakota
+              option(value='OH') Ohio
+              option(value='OK') Oklahoma
+              option(value='OR') Oregon
+              option(value='PA') Pennsylvania
+              option(value='RI') Rhode Island
+              option(value='SC') South Carolina
+              option(value='SD') South Dakota
+              option(value='TN') Tennessee
+              option(value='TX') Texas
+              option(value='UT') Utah
+              option(value='VT') Vermont
+              option(value='VA') Virginia
+              option(value='WA') Washington
+              option(value='WV') West Virginia
+              option(value='WI') Wisconsin
+              option(value='WY') Wyoming
+          p
+            label(for='zip') Zip:
+            input#zip(type='text' name='zip' placeholder='ex. 67401' required='')
+          p
+            label(for='school') School:
+            input#school(type='text' name='school' required='')
+
+          br
+          label(for='type') Type:
+          br
+          br
+          input#student(type='radio' name='role' value='student')
+          label(for='student') Student
+          br
+          input#parent(type='radio' name='role' value='parent')
+          label(for='parent') Parent
+          br
+          input#educator(type='radio' name='role' value='educator')
+          label(for='educator') Educator
+          br
+          input#sponsor(type='radio' name='role' value='sponsor')
+          label(for='sponsor') Sponsor
+          br
+          br
+          label(for='sessions') Please Choose 6 Sessions:
+          br
+          br
+          input(type='checkbox' name='Chiropractic_Care' value='Chiropractic_Care')
+          label(for='Chiropractic_Care') Chiropractic Care
+          br
+          input(type='checkbox' name='Dentistry' value='Dentistry')
+          label(for='Dentistry') Dentistry
+          br
+          input(type='checkbox' name='Engineering' value='Engineering')
+          label(for='Engineering') Engineering
+          br
+          input(type='checkbox' name='Finance' value='Finance')
+          label(for='Finance') Finance
+          br
+          input(type='checkbox' name='Graphic_Design' value='Graphic_Design')
+          label(for='Graphic_Design') Graphic Design
+          br
+          input(type='checkbox' name='Interior_Architecture' value='Interior_Architecture')
+          label(for='Interior_Architecture') Interior Architecture
+          br
+          input(type='checkbox' name='Law_Enforcement' value='Law_Enforcement')
+          label(for='Law_Enforcement') Law Enforcement
+          br
+          input(type='checkbox' name='Legal_Services' value='Legal_Services')
+          label(for='Legal_Services') Legal Services
+          br
+          input(type='checkbox' name='Nonprofit_Administration' value='Nonprofit_Administration')
+          label(for='Nonprofit_Administration') Nonprofit Administration
+          br
+          input(type='checkbox' name='Professional_Pilot' value='Professional_Pilot')
+          label(for='Professional_Pilot') Professional Pilot
+          br
+          input(type='checkbox' name='Realty' value='Realty')
+          label(for='Realty') Realty
+          br
+          input(type='checkbox' name='Research_Scientist' value='Research_Scientist')
+          label(for='Research_Scientist') Research Scientist
+          br
+          input(type='checkbox' name='Zoo_Veterinarian_Medicine' value='Zoo_Veterinarian_Medicine')
+          label(for='Zoo_Veterinarian_Medicine') Zoo Veterinarian Medicine
+          br
+          br
+        
+
+          input#submitbutton(type='submit' value='Submit')
+          | 
+          input#submitbutton(type='button' value='Back to Home' onclick="window.location.href = '/'")
+          br
+          br
+  footer
+    br
+    br
+    br
+    br

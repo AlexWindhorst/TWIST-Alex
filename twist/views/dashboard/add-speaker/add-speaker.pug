@@ -1,0 +1,50 @@
+doctype html
+head
+  link(href='../../stylesheets/our.css' rel='stylesheet')
+  meta(charset='utf-8')
+  meta(name='keywords' content='Twist, Women, Technology, Aviaiton, Engineering, Science')
+  meta(name='description' content='Twist website')
+  meta(name='author' content='Eric Webb, Shea Clark, Wesley Elliott, Jon Martin, Alex Windhorst')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+h2 Add Speaker
+div
+  .form_container
+    form(method='POST' action='')
+      label(for='fName') First Name*:
+      br
+      input#fName(type='text' name='firstName' required='')
+      br
+      br
+      br
+      label(for='lName') Last Name*:
+      br
+      input#lName(type='text' name='lastName' required='')
+      br
+      br
+      br
+      label(for='email') Email*:
+      br
+      input#email(type='email' name='email' required='')
+      br
+      br
+      br
+      label(for='phone') Phone*:
+      br
+      input#phone(type='text' name='phone' required='')
+      br
+      br
+      br
+      label(for='topicName') Topic Name*:
+      br
+      input#topicName(type='text' name='topicName' required='')
+      br
+      br
+      br
+      label(for='topicDesc') Topic Description:
+      br
+      textarea#topicDesc(name='topicDesc', cols="60", rows="5")
+      br
+      p * Required Information
+      br
+      input#submitbutton(type='submit' value='Submit')
+      input#submitbutton(type='button' value='Back to Dashboard' onclick="window.location.href = '/dashboard'")

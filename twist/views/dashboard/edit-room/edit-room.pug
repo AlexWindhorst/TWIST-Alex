@@ -1,0 +1,26 @@
+doctype html
+head
+  link(href='../../../stylesheets/our.css' rel='stylesheet')
+  meta(charset='utf-8')
+  meta(name='keywords' content='Twist, Women, Technology, Aviaiton, Engineering, Science')
+  meta(name='description' content='Twist website')
+  meta(name='author' content='Eric Webb, Shea Clark, Wesley Elliott, Jon Martin, Alex Windhorst')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+h2 Edit Room
+div
+  .form_container
+    form(method='POST' action='')
+      label(for='number') Room Name:
+      br
+      input#room(type='text' name='roomNumber' placeholder='eg. TC162' value=Room.num required='')
+      br
+      br
+      br
+      label(for='capacity') Capacity:
+      br
+      input#capacity(type='text' name='capacity' placeholder='15' value=Room.cap required='')
+      br
+      br
+      br
+      input#submitbutton(type='submit' value='Submit')
+      input#submitbutton(type='button' value='Back to Dashboard' onclick="window.location.href = '/dashboard'")

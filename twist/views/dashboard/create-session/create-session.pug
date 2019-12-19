@@ -1,0 +1,37 @@
+doctype html
+head
+  link(href='../../stylesheets/our.css' rel='stylesheet')
+  meta(charset='utf-8')
+  meta(name='keywords' content='Twist, Women, Technology, Aviaiton, Engineering, Science')
+  meta(name='description' content='Twist website')
+  meta(name='author' content='Eric Webb, Shea Clark, Wesley Elliott, Jon Martin, Alex Windhorst')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+h2 Add Session
+div
+  .form_container
+    form(method='POST' action='')
+      label(for='topic') Topic Name*:
+      br
+      select(name='topicId')
+        for topic in topics
+          option(value=topic._id) #{topic.name}
+      br
+      label(for='room') Room Number*:
+      br
+      select(name='roomNumber')
+        for room in rooms
+          option(value=room.roomNumber) #{room.num+' - '+room.cap}
+      br
+      label(for='block') Time*:
+      br
+      select(name='blockNumber')
+        for block in blocks
+          option(value=block.blockNumber) #{block.start+' - '+block.end}
+      br
+      p * Required Information
+      .scroll
+      input#submitbutton(type='submit' value='Submit')
+      input#submitbutton(type='button' value='Back to Dashboard' onclick="window.location.href = '/dashboard'")
+  .flex-container
+    div
+    div

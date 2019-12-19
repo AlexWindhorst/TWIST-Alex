@@ -1,0 +1,27 @@
+doctype html
+head
+  link(href='../../stylesheets/our.css' rel='stylesheet')
+  meta(charset='utf-8')
+  meta(name='keywords' content='Twist, Women, Technology, Aviaiton, Engineering, Science')
+  meta(name='description' content='Twist website')
+  meta(name='author' content='Eric Webb, Shea Clark, Wesley Elliott, Jon Martin, Alex Windhorst')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+h2 Attendees
+.descpara
+  table
+    thead
+      tr
+        th Name
+        th Edit
+        th Delete
+      tr
+    tbody
+      for people in people_list
+        tr(id=people.id)
+          td
+            span #{people.name}
+          td
+            a#submitbutton(href='/dashboard/attendee-list/edit-attendee/' + people.id) Edit
+          td
+            button#submitbutton(onClick='') Delete
+input#submitbutton(type='button' value='Back to Dashboard' onclick="window.location.href = '/dashboard'")

@@ -1,0 +1,29 @@
+doctype html
+head
+  link(href='stylesheets/our.css' rel='stylesheet')
+  meta(charset='utf-8')
+  meta(name='keywords' content='Twist, Women, Technology, Aviaiton, Engineering, Science')
+  meta(name='description' content='Twist Organizer Login')
+  meta(name='author' content='Eric Webb, Shea Clark, Wesley Elliot, Jon Martin, Alex Cosco')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+h2
+  | Log in
+#blue.fill
+  .form_container
+    form(name='loginform' method='post' action='')
+      br
+      label(for='user') Username:
+      br
+      input#user(type='text' name='user' required='')
+      br
+      br
+      br
+      label(for='pass') Password:
+      br
+      input#pass(type='password' name='pass' required='')
+      br
+      br
+      
+      input#submitbutton(type='submit' value='Login')
+      | 
+      input#submitbutton(type='button' value='Back to Home' onclick="window.location.href = '/'")

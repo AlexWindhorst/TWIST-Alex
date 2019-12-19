@@ -1,0 +1,33 @@
+doctype html
+head
+  link(href='../../../stylesheets/our.css' rel='stylesheet')
+  meta(charset='utf-8')
+  meta(name='keywords' content='Twist, Women, Technology, Aviaiton, Engineering, Science')
+  meta(name='description' content='Twist website')
+  meta(name='author' content='Eric Webb, Shea Clark, Wesley Elliott, Jon Martin, Alex Windhorst')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+h2 Edit Block
+div
+  .form_container
+    form(method='POST' action='')
+      label(for='blockNumber') Block Number:
+      br
+      input#room(type='text' name='blockNumber' value=block.number required='')
+      br
+      br
+      br
+      label(for='blockStart') Block Start:
+      br
+      input#capacity(type='text' name='blockStart' value=block.start required='')
+      br
+      br
+      br
+      label(for='blockEnd') Block End:
+      br
+      input#capacity(type='text' name='blockEnd' value=block.end required='')
+      br
+      br
+      br
+      input#submitbutton(type='submit' value='Submit')
+      input#submitbutton(type='button' value='Back to Block List' onclick="window.location.href = '/dashboard/block-list'")
+      input#submitbutton(type='button' value='Back to Dashboard' onclick="window.location.href = '/dashboard'")
